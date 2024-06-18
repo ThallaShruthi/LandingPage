@@ -1,0 +1,158 @@
+/* Reset some default browser styles */
+body, h1, h2,h4, p, ul, li, nav, footer, header, section, form, label, input, textarea, button {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h2{
+    background-color: #d2d0da;
+}
+p{
+    font-size: large;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 3;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer, .hero, .columns, .column, .form {
+    width: 100%;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 8rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('https://i.imgur.com/iyjlwut.jpeg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+    flex: 1;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.column {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 30%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    max-width: 891px;
+    margin: 2rem auto;
+    text-align: center;
+    background-color: #e3dfcd;
+    text-align: center;
+
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #000;
+    color: #a39999;
+    text-align: center;
+    padding: 1rem 0;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 2rem 0;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+
+    form input, form textarea, form button {
+        font-size: 0.9rem;
+    }
+}
